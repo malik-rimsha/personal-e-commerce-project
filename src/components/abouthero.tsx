@@ -19,21 +19,13 @@ Each bottle is made with cold-pressed ingredients and traditional techniques, bl
 
                 </p>
                 <div className="pl-4 md:pl-6">
-    <Link href={'product'}>
-        <button className="bg-[#2e6a6d] hover:bg-[#235a5c] transition-colors duration-300 text-white px-6 md:px-8 py-3 md:py-4 text-[14px] md:text-[16px] font-medium rounded-lg shadow-md hover:shadow-lg">
-            View Collection
-        </button>
-    </Link>
-</div>
-                 {/* <Link href={'product'} >
-                <div className="pl-4 md:pl-6">
-                    <button className="bg-[#2e6a6d] hover:bg-[#235a5c] transition-colors duration-300 text-white px-6 md:px-8 py-3 md:py-4 text-[14px] md:text-[16px] font-medium rounded-lg shadow-md hover:shadow-lg">
-                       View Collection
-                    </button>
-                   
-                </div>
-                </Link> */}
-               
+              <Link href={'product'}>
+               <button className="bg-[#2e6a6d] hover:bg-[#235a5c] transition-colors duration-300 text-white px-6 md:px-8 py-3 md:py-4 text-[14px] md:text-[16px] font-medium rounded-lg shadow-md hover:shadow-lg">
+              View Collection
+        
+               </button>
+               </Link>
+</div>  
             </div>
 
             {/* Right Section */}

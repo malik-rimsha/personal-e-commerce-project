@@ -1,65 +1,6 @@
-// import Link from "next/link";
-// import { Input } from "./ui/input";
-// import { ShoppingCartIcon, Menu, CheckIcon } from "lucide-react";
-// import { Button } from "./ui/button";
-// import { SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
-// import { Sheet } from "./ui/sheet";
-
-// export default function Searchbar() {
-//     return (
-//         <nav className=" w-full border-b-2 bg-[#F0F2F3] p-4">
-//             <div className="max-w-7xl h-4 ml-32 mx-auto flex items-center justify-between">
-//                 <img className="h-20 w-30 " src="Rdlogo.png" alt="Logo" /> 
-//                 <h1 className=" align-items: center display: flex font-bold text-lg ">RD Organic Hair Oil</h1>
-
-//                 <div className="hidden w-20 md:flex ml-auto mr-20">
-//                     <div className="relative">
-//                         <ShoppingCartIcon className="absolute right-2 top-2" />
-//                         <Input placeholder="cart" className="bg-white font-xs" />
-//                     </div>
-//                 </div>
-
-//                 <Sheet>
-//                     <SheetTrigger asChild>
-//                         <Button variant={"outline"} size={"icon"} className="rounded-full">
-//                             <Menu />
-//                         </Button>
-//                     </SheetTrigger>
-//                     <SheetContent>
-//                         <SheetHeader>
-//                             <SheetTitle>
-//                                 <img className="h-6 w-28 ml-10" src="1logo.png" alt="Logo" />
-//                             </SheetTitle>
-//                         </SheetHeader>
-//                         <div className="flex flex-col gap-6 mt-6">
-//                             <Link href={'/'} className="text-sm font-normal">Home</Link>
-//                             <Link href={'product'} className="text-sm font-normal">Product</Link>    
-//                             <Link href={'about'} className="text-sm font-normal">About</Link>
-//                             <Link href={'contact'} className="text-sm font-normal">Contact</Link>
-//                             <Link href={'cart'} className="text-sm font-normal">Cart</Link>
-//                         </div>
-//                         <div className="mt-4">
-//                             <div className="relative">
-//                                 <Input placeholder="cart" className="bg-offwhite" />
-//                                 <ShoppingCartIcon className="absolute right-2 top-2" />
-//                             </div>
-//                         </div>
-//                         <div className="mt-4 space-x-2">
-//                             <Button variant={"outline"} size={"icon"} className="rounded-2xl">
-//                                 <CheckIcon />
-//                             </Button>
-//                             <Button variant={"outline"} size={"icon"} className="rounded-full">
-//                                 <ShoppingCartIcon />
-//                             </Button>
-//                         </div>
-//                     </SheetContent>
-//                 </Sheet>
-//             </div>
-//         </nav>
-//     );
-// }
 
 import Link from "next/link";
+import Image from "next/image"; // ✅ Added Next.js optimized Image
 import { Input } from "./ui/input";
 import { ShoppingCartIcon, Menu, CheckIcon } from "lucide-react";
 import { Button } from "./ui/button";
@@ -69,10 +10,10 @@ export default function Searchbar() {
   return (
     <nav className="w-full border-b-2 bg-[#F0F2F3] p-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8">
-        
         {/* Logo and Title */}
         <div className="flex items-center gap-3">
-          <img className="h-12 w-auto" src="Rdlogo.png" alt="Logo" />
+          {/* ✅ Replaced <img> with <Image /> */}
+          <Image src="/Rdlogo.png" alt="Logo" width={48} height={48} className="h-12 w-auto" />
           <h1 className="font-bold text-base sm:text-lg md:text-xl">
             RD Organic Hair Oil
           </h1>
@@ -98,27 +39,18 @@ export default function Searchbar() {
             <SheetContent side="right" className="w-64 sm:w-72">
               <SheetHeader>
                 <SheetTitle className="flex items-center justify-center">
-                  <img className="h-8 w-auto" src="1logo.png" alt="Logo" />
+                  {/* ✅ Replaced <img> with <Image /> */}
+                  <Image src="/Rdlogo.png" alt="Logo" width={32} height={32} className="h-8 w-auto" /> RD Organic Hair Oil
                 </SheetTitle>
               </SheetHeader>
 
               {/* Navigation Links */}
               <div className="flex flex-col gap-5 mt-8 text-center">
-                <Link href="/" className="text-sm font-medium hover:underline">
-                  Home
-                </Link>
-                <Link href="/product" className="text-sm font-medium hover:underline">
-                  Product
-                </Link>
-                <Link href="/about" className="text-sm font-medium hover:underline">
-                  About
-                </Link>
-                <Link href="/contact" className="text-sm font-medium hover:underline">
-                  Contact
-                </Link>
-                <Link href="/cart" className="text-sm font-medium hover:underline">
-                  Cart
-                </Link>
+                <Link href="/" className="text-sm font-medium hover:underline">Home</Link>
+                <Link href="/product" className="text-sm font-medium hover:underline">Product</Link>
+                <Link href="/about" className="text-sm font-medium hover:underline">About</Link>
+                <Link href="/contact" className="text-sm font-medium hover:underline">Contact</Link>
+                <Link href="/cart" className="text-sm font-medium hover:underline">Cart</Link>
               </div>
 
               {/* Cart Input (Mobile) */}
@@ -143,3 +75,4 @@ export default function Searchbar() {
     </nav>
   );
 }
+

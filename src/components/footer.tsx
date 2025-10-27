@@ -24,8 +24,8 @@ export default function Footer() {
                             />
                         </div>
                         <p className="mt-4 text-gray-500 text-sm md:text-base">
-                           Nurturing your hair with natures's finest. RD Organic Hair Oil - Where 
-                           Purity meets Perfection.
+                            Nurturing your hair with nature&apos;s finest. RD Organic Hair Oil – Where
+                            Purity meets Perfection.
                         </p>
                         <div className="flex gap-4 mt-4">
                             <a
@@ -75,7 +75,14 @@ export default function Footer() {
                     <div className="w-full sm:w-1/2 md:w-1/5">
                         <h4 className="text-lg font-semibold text-[#9A9CAA]">Category</h4>
                         <ul className="mt-4 text-[#272343] space-y-2">
-                            {["Taramira Strong", "Taramira mild", "Twin Drop Of Gold", "Mustard Royal", "Mustard Classic", "Twin Essence"].map((item) => (
+                            {[
+                                "Taramira Strong",
+                                "Taramira Mild",
+                                "Twin Drop Of Gold",
+                                "Mustard Royal",
+                                "Mustard Classic",
+                                "Twin Essence",
+                            ].map((item) => (
                                 <li key={item}>
                                     <a
                                         href="#"
@@ -92,7 +99,12 @@ export default function Footer() {
                     <div className="w-full sm:w-1/2 md:w-1/5">
                         <h4 className="text-lg font-semibold text-[#9A9CAA]">Support</h4>
                         <ul className="mt-4 text-[#272343] space-y-2">
-                            {["Help & Support", "Terms & Conditions", "Privacy Policy", "Help"].map((item) => (
+                            {[
+                                "Help & Support",
+                                "Terms & Conditions",
+                                "Privacy Policy",
+                                "Help",
+                            ].map((item) => (
                                 <li key={item}>
                                     <a
                                         href="#"
@@ -119,7 +131,7 @@ export default function Footer() {
                             </button>
                         </div>
                         <p className="mt-4 text-gray-500 text-sm md:text-base">
-                           Blending tradition and purity to bring you healthier, stronger hair.
+                            Blending tradition and purity to bring you healthier, stronger hair.
                         </p>
                     </div>
                 </div>
@@ -127,7 +139,7 @@ export default function Footer() {
                 {/* Footer Bottom */}
                 <div className="flex flex-wrap justify-between items-center text-[#9A9CAA] border-t pt-8">
                     <p className="w-full text-center sm:w-auto">
-                       © 2025 - R D Organic Hair Oil - Designed & Developed by{" "}
+                        © 2025 - R D Organic Hair Oil - Designed & Developed by{" "}
                         <a href="#" className="text-[#272343] hover:underline">
                             RD Team
                         </a>
@@ -137,3 +149,4 @@ export default function Footer() {
         </footer>
     );
 }
+
