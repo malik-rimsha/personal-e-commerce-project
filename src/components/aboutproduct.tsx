@@ -11,7 +11,7 @@ const AboutProduct = () => {
                 <div className="text-center">
                     <Image
                         src="/p9.png"
-                        alt="1"
+                        alt="9"
                         width={590}
                         height={375}
                         className="object-cover mx-auto"
@@ -22,7 +22,7 @@ const AboutProduct = () => {
                 <div className="text-center">
                     <Image
                         src="/s1.png"
-                        alt="2"
+                        alt="1"
                         width={305}
                         height={375}
                         className="object-cover mx-auto"
@@ -33,7 +33,7 @@ const AboutProduct = () => {
                 <div className="text-center">
                     <Image
                         src="/s2.png"
-                        alt="3"
+                        alt="s"
                         width={305}
                         height={375}
                         className="object-cover mx-auto"

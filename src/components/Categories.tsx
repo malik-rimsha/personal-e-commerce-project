@@ -7,19 +7,19 @@ export default function Categories() {
       name: "Tramira Royal",
       // products: "3,584 Products",
       image: "/p9.png",
-      href: "/categories/wing-chair",
+      href: "/categories/Tramira Royal",
     },
     {
       name: "Twin Essence",
       // products: "157 Products",
       image: "/p5.png",
-      href: "/categories/wooden-chair",
+      href: "/categories/Twin Essence",
     },
     {
       name: "Mustard Royal",
       // products: "154 Products",
       image: "/p10.png",
-      href: "/categories/desk-chair",
+      href: "/categories/Mustard Royal",
     },
   ];
 

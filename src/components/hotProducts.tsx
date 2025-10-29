@@ -11,7 +11,7 @@ export default function HotProduct() {
           <div className="w-full md:w-[48%]">
             <Image
               src="/R1.png"
-              alt="Orange modern chair"
+              alt="hair fall"
               className="h-full w-full object-cover"
               width={500}
               height={500}
@@ -22,7 +22,7 @@ export default function HotProduct() {
             <div className="aspect-square">
               <Image
                 src="/R2.png"
-                alt="White tufted chair"
+                alt="scalp hair loss"
                 className="h-full w-full object-cover"
                 width={500}
                 height={500}
@@ -31,7 +31,7 @@ export default function HotProduct() {
             <div className="aspect-square">
               <Image
                 src="/R3.png"
-                alt="Gray upholstered chair"
+                alt="dandruff"
                 className="h-full w-full object-cover"
                 width={500}
                 height={500}
@@ -40,7 +40,7 @@ export default function HotProduct() {
             <div className="aspect-square">
               <Image
                 src="/R5.png"
-                alt="Vintage white chair"
+                alt="rough hair"
                 className="h-full w-full object-cover"
                 width={500}
                 height={500}
@@ -49,7 +49,7 @@ export default function HotProduct() {
             <div className="aspect-square">
               <Image
                 src="/R4.png"
-                alt="Vintage white chair duplicate"
+                alt="follicle hair"
                 className="h-full w-full object-cover"
                 width={500}
                 height={500}
